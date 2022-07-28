@@ -14,6 +14,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
 	<body>
@@ -369,7 +370,7 @@
 			<div class="container futter-list">
 				<div class="addressa">
 					<div class="logo-location">
-						<a href="./index.html" class="logo">
+						<a href="./index.html" class="logo logo-footer">
 							Web
 							<span class="logo-futter">Studio</span>
 						</a>
@@ -448,7 +449,7 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button data-modal-close type="button" class="modal-batton">
-					<svg width="18px" height="18px" class="icon-modal">
+					<svg width="11px" height="11px" class="icon-modal">
 						<use href="./images/sprite.svg#icon-close"></use>
 					</svg>
 				</button>
@@ -484,27 +485,24 @@
 							</svg>
 						</div>
 					</div>
-
-					<div class="modal-field">
-						<label for="user-text" class="modal-label">Коментар</label>
-						<textarea name="user-text" id="user-text" class="input-text" placeholder="Введіть текст"></textarea>
-						<div class="modal-check">
-							<input type="checkbox" class="input-check visually-hidden" name="privacy" value="true" id="privacy" />
-							<label for="privacy" class="check-text">
-								<span class="icon-vector">
-									<svg class="check-icon" width="16" height="15">
-										<use href="./images/sprite.svg#icon-Vector-1"></use>
-									</svg>
-								</span>
-								<span class="acsept-text">
-									Погоджуюся з розсилкою та приймаю
-									<span>Умови договору</span>
-								</span>
-							</label>
-						</div>
-
-						<button type="submit" class="button-sent">Відправити</button>
+					<label for="user-text" class="modal-label">Коментар</label>
+					<textarea name="user-text" id="user-text" class="input-text" placeholder="Введіть текст"></textarea>
+					<div class="modal-check">
+						<input type="checkbox" class="input-check visually-hidden" name="privacy" value="true" id="privacy" />
+						<label for="privacy" class="check-text">
+							<span class="icon-vector">
+								<svg class="check-icon" width="16" height="15">
+									<use href="./images/sprite.svg#icon-Vector-1"></use>
+								</svg>
+							</span>
+							<span class="acsept-text">
+								Погоджуюся з розсилкою та приймаю
+								<span>Умови договору</span>
+							</span>
+						</label>
 					</div>
+
+					<button type="submit" class="button-sent">Відправити</button>
 				</div>
 			</div>
 		</div>

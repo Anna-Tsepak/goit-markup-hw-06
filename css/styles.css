@@ -503,6 +503,11 @@ display: flex;
 .logo-location {
   padding-bottom: 20px;
 }
+
+.logo-footer{
+  margin: 0;
+}
+
 .link,
 .contact-link {
   text-decoration: none;
@@ -616,9 +621,7 @@ display: flex;
   border-radius: 4px;
   background-color: #2F303A;
   padding-left: 16px;
- 
- 
-
+  color: #757575;
 
 }
 .mailing-list::placeholder{
@@ -631,8 +634,7 @@ display: flex;
 }
 
 .mailing-meil {
-  display: flex;
-  
+  display: flex;  
 }
 
 .icon-mailing-button{
@@ -792,16 +794,16 @@ display: flex;
   width:100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-   top: 0;
+  top: 0;
   right: 0;
-   opacity: 1;
-    transition: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
  }
 .modal {
   width: 528px; 
-  height: 521px; 
+  height: 581px; 
   background-color: #FFFFFF;
   position: absolute;
   top: 50%;
@@ -809,8 +811,9 @@ display: flex;
   transform:translate(-50%,-50%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  padding: 40px;
   transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .backdrop.is-hidden{
@@ -818,15 +821,12 @@ display: flex;
   pointer-events: none;
   visibility: hidden;
 }
-.modal-window{
-  padding: 40px;
-
-}
 
 .icon-modal {
   display: flex;
     width: 30px;
     height: 30px;
+    padding: 3px 4px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -842,7 +842,9 @@ display: flex;
     background-color: #ffffff;
     border: #ffffff;
     padding: 0px;
-    right: 0; 
+    right: 8px; 
+    top: 8px;
+  
   }
 
     .modal-batton:focus .icon-modal
@@ -913,12 +915,13 @@ display: flex;
   }
   .input-text { 
     width: 100%;
-      height: 100px;
+      height: 120px;
       border-radius: 4px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       padding: 12px 16px;
       outline: none;
       resize: none;
+      color: #757575;
 
   }
   .input-text:focus {
@@ -956,6 +959,9 @@ display: flex;
   line-height: 1.1px;
   letter-spacing: 0.01em;
   color: #757575;
+  margin-bottom:4px;
+
+  
 
    }
 
@@ -975,6 +981,7 @@ border: transparent;
 }
     
   .button-sent {
+    display: block;
     width: 200px;
     height: 50px;
     display: flex;
@@ -988,7 +995,7 @@ border: transparent;
     line-height: 1.8px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    margin-top: 30px;
+    margin:auto;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -996,15 +1003,14 @@ border: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
-
-
   .acsept-text{
       font-size: 14px;
       line-height: 2px;
       letter-spacing: 0.03em;
-      color: #757575;
-      margin-top: 10px;
+      color: #757575; 
+      margin: auto;
   }
+
 .acsept-text span {
   color: #2196F3;
   text-decoration:underline ;
@@ -1015,6 +1021,11 @@ display:flex;
 flex-wrap: wrap;
 justify-content: center;
 align-content: center;
+margin-top: 20px;
+margin-bottom: 30px;
+
+
+
 
 }
 
